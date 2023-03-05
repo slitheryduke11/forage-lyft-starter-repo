@@ -1,4 +1,4 @@
-import datetime
+from datetime import date
 
 from battery.battery import Battery
 
@@ -13,4 +13,4 @@ class SpindlerBattery(Battery):
     def needs_service(self):
         """Check if battery needs service."""
         date_for_service = self.last_service_date.replace(year=self.last_service_date.year + self.years_for_service)
-        return date_for_service < datetime.date.today()
+        return date_for_service < date.today()
