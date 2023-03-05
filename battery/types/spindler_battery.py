@@ -8,7 +8,7 @@ class SpindlerBattery(Battery):
 
     def __init__(self, last_service_date):
         self.last_service_date = last_service_date
-        self.years_for_service = 2
+        self.years_for_service = 3
 
     def needs_service(self):
         """Check if battery needs service."""
